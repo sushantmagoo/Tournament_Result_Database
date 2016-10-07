@@ -6,6 +6,9 @@
 -- You can write comments in this file by starting them with two dashes, like
 -- these lines here.
 
+-- delete if already exist
+DROP DATABASE IF EXISTS tournament;
+
 -- created database named 'tournament'
 CREATE DATABASE tournament;
 
