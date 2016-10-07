@@ -14,5 +14,8 @@
 		* 'vagrant up'
 		* then 'vagrant ssh'
 	* cd home directory then find 'vagrant/tournament'
+	* type 'psql' for postgresql
+	* '\i tournament.sql' to run
+	* '\q' to quit
 
 ### A simple database to store swiss style tournaments. 

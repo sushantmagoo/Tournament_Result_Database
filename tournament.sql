@@ -15,7 +15,7 @@ CREATE DATABASE tournament;
 -- created a table named 'Player' having id and name
 CREATE TABLE Player(
 	id SERIAL PRIMARY KEY,
-	name TEXT NOT NULL;
+	name TEXT NOT NULL
 );
 
 -- created a table named 'Match' having id, win and loss
