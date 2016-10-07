@@ -46,7 +46,7 @@ def registerPlayer(name):
     db = connect()
     c = db.cursor()
     # Passed tuple to prevent SQL Injection
-    c.execute("INSERT INTO Player VALUES (%s)", (name, ))
+    c.execute("INSERT INTO Player (name) VALUES (%s)", (name, ))
     db.commit()
     db.close()
 
@@ -79,7 +79,7 @@ def reportMatch(winner, loser):
     """
     db = connect()
     c = db.cursor()
-    c.execute("INSERT INTO Match VALUES (%s, %s)", (winner, loser, ))
+    c.execute("INSERT INTO Match (win, loss) VALUES (%s, %s)", (winner, loser, ))
     db.commit()
     db.close()
  
